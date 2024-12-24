@@ -1,0 +1,252 @@
+header {
+    background-image: url(img/fon-head.png);
+    height: 650px;
+
+}
+
+.menu {
+    width: 1100px;
+    height: 64px;
+    background: #31353A;
+    border-radius: 8px;
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.bg {
+    color: #AFB5BD;
+    margin:16px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.myle {
+    border-right: 2px solid #464A4E;
+    ;
+    padding-right: 16px;
+}
+
+.lupa {
+    border-right: 2px solid #464A4E;
+    background-color: #31353A;
+    padding-right: 16px;
+    border: none;
+
+}
+
+.lupa:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.button-head {
+    background: linear-gradient(90deg, #61B3F2 0.44%, #5566D9 100%);
+    border-radius: 4px;
+    width: 128px;
+    height: 44px;
+    color: white;
+}
+
+.button-head2 {
+    width: 160px;
+    height: 44px;
+    background: #3772E1;
+    border-radius: 8px;
+    color: white;
+}
+
+.undermenu {
+    display: flex;
+    justify-content: center;
+    height: 85%;
+}
+
+.txt1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F5C473;
+}
+
+.txt2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.txt3 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.head-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 555px;
+}
+
+.head-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.txt-about {
+    width: 920px;
+    display: flex;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(53, 58, 64, 0.5);
+}
+
+.Fleet-Inventory {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cars2 {
+    width: 920px;
+    height: 420px;
+    display: flex;
+}
+
+.litl-car {
+    width: 44px;
+    display: flex;
+}
+
+.txt-cars {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(53, 58, 64, 0.5);
+}
+
+.main-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.child-block {
+    display: flex;
+    align-items: center;
+}
+
+.mini-logo {
+    margin-left: 200px;
+}
+
+.info {
+    margin-top: 140px;
+}
+
+.conven {
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: capitalize;
+    color: #353A40
+}
+
+.curb {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(53, 58, 64, 0.5);
+    width: 450px;
+}
+
+.carsabove {
+    width: 100%;
+    height: 410px;
+    background: #353A40;
+    display: flex;
+    justify-content: center;
+}
+
+.wheel {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.ada {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 350px;
+}
+
+.button-above {
+    width: 160px;
+    height: 44px;
+    background: linear-gradient(90deg, #61B3F2 0.44%, #5566D9 100%);
+    border-radius: 4px;
+}
+
+.see-txt {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    color: #353A40;
+    width: 801px;
+    margin: auto;
+}
+
+.img-see {
+    display: flex;
+    margin: auto;
+}
+
+.see {
+    margin-top: 120px;
+}
+
+.Pricing {
+    margin-top: 120px;
+}
+
+.txt-pr {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    color: #353A40;
+    text-align: center;
+}
+
+.fixx{
+display:flex;
+
+}
+

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'home.css' %}">
+    <title>Document</title>
+    <style>
+
+        .container{
+            max-width: 1130px;
+            margin: 0 auto;
+        }
+        .mainTxt{
+            width: 100%;
+        }
+        .backgroundI {
+            background-image: url(../photos/backgroundMain.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .mainTitle{
+            font-family: Rimma_sans;
+            font-weight: bold;
+            font-size: 55px;
+            text-transform: uppercase;
+            color: white;
+            margin-top: 143px;
+            text-align: center;
+        }
+        .mainCategories{
+            margin-top: 197px;
+        }
+        .maincards{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footerCategoryTxt{
+            font-family: Kankin;
+            font-size: 16px;
+            color: white;
+            margin-left: 8px;
+        }
+        .footerCategory{
+            display: flex;
+            align-items: center;
+            margin-right: 60px;
+        }
+        .footerCategories{
+            display: flex;
+            margin-top: 50px;
+        }
+        .footerTitle{
+            font-family: Rimma_sans;
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            margin-top: 170px;
+        }
+        .privatePolicy{
+            font-family: Kankin;
+            font-size: 16px;
+            color: white;
+            margin-top: 60px;
+            padding-bottom: 160px;
+        }
+
+        .img1{
+          
+          width: 300px;
+          height: 300px;
+          border-radius:20px;
+        }
+
+        .fixx{
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .card{
+          display: flex;
+          flex-direction: column;
+    align-items: center;
+        }
+
+        .card-text{
+          text-decoration: none;
+          color: black;
+          font-size: 15px;
+          margin: 0;
+        }
+
+        .card-title{
+          text-decoration: none;
+          color: black;
+          font-size: 15px;
+        }
+
+        .card-body{
+          display:flex;
+          flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+{%block content%}
+
+<div class='backgroundI'>
+    <div class="container">
+      <img src="../photos/bw.png" alt="" class="mainTxt" />
+      <img src="../photos/MainImg.png" alt="" />
+      <p class="mainTitle">Россия тур 2025</p>
+      <div class="maincards">
+        <a to="/h/tour">
+          <img src="../photos/MainCard1.png" class='mainCategories' alt="" />
+        </a>
+        <a to="/h/music">
+          <img src="../photos/MainCard3.png" class='mainCategories' alt="" />
+        </a>
+      </div>
+    </div>
+
+
+  <div class="container">
+    <p class="mainTitle">Мерч</p>
+ 
+<div class="fixx">
+	{%for product in products%}
+
+	<div class="card">
+    <a href="{% url 'add' product.id%}" class="txt button__buy">
+		<img src="{{product.image.url}}" class="img1" alt="...">
+  </a>
+		<div class="card-body">
+			<span><h5 class="card-title" style="color: white">{{product.title}}</h5></span>
+			<span><p class="card-text" style="color: white">{{product.price}} руб.</p></span>
+			<div class="card-bottom">
+
+
+
+			</div>
+		</div>
+	</div>
+	{%endfor%}
+
+
+</div>
+
+
+
+
+
+
+
+
+</div> 
+<footer>
+    <div class="container">
+      <p class="footerTitle">Контакты</p>
+      <div class="footerCategories">
+        <div class="footerCategory">
+            <img src="../photos/insta.png" alt="" />
+            <p class="footerCategoryTxt">@pluxury_sport</p>
+          </div>
+          <div class="footerCategory">
+            <img src="../photos/vk.png" alt="" />
+            <p class="footerCategoryTxt">vk.com/boulevardepo</p>
+          </div>
+          <div class="footerCategory">
+            <img src="../photos/telegram.png" alt="" />
+            <p class="footerCategoryTxt">t.me/boulevardepo</p>
+          </div>
+          <div class="footerCategory">
+            <img src="../photos/mail.png" alt="" />
+            <p class="footerCategoryTxt">booking@mugen.world</p>
+          </div>
+      </div>
+      <p class="privatePolicy">
+        * Instagram принадлежит компании Meta, признанной экстремистской
+        организацией и запрещенной в РФ
+      </p>
+    </div>
+  </footer>
+</div>
+</div>
+
+
+{%endblock%}
+
+</body>
+</html>
+

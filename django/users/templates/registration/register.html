@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		.fg{
+			display: flex;
+			flex-direction: column;
+    		align-items: center;
+			width: 600px;
+			height: 600px;
+			background: white;
+			justify-content: center;
+			margin-left: 30%;
+			border-radius: 5px 20px 5px 20px;
+		}
+		.backgroundI {
+            background-image: url(../../photos/backgroundMain.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+		.login{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.btn {
+			width: 150px;
+			height: 30px;
+			border-radius: 20px;
+			background: white;
+			border: 1px solid;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body class="backgroundI">
+	{%extends 'base.html'%}
+	{% block content %} 
+ 
+	<form method="post" class="fg"> 
+	 {% csrf_token %} 
+	 <div class="login"> 
+	 <h4>{{form.username.label_tag}}</h4> 
+	 {{form.username}} 
+	 </div> 
+	 <div class="login"> 
+	 <h4>{{form.password1.label_tag}}</h4> 
+	 {{form.password1}} 
+	 </div> 
+	 <div class="login"> 
+	 <h4>{{form.password2.label_tag}}</h4> 
+	 {{form.password2}} 
+	 </div> 
+	 <div class="login_but_sign"> 
+	 <input class="butt3 btn" type="submit" name="submit" value="Отправить"> 
+	 </div> 
+	</form> 
+	{% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+

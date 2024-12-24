@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eshop</title>
+	{%load static%}
+	<link rel="stylesheet" href="{%static 'home.css' %}">
+    <style>
+      .headerLogo{
+        width: 285px;
+    }
+    .headertxt{
+        font-size: 36px;
+        font-family: Lazurski;
+        color: white;
+        text-transform: uppercase;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container{
+      max-width: 1130px;
+      margin: 0 auto;
+      
+    }
+
+    header{
+      height: 200px;
+    }
+
+    .ur{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    </style>
+</head>
+<body>
+	
+
+	<header>
+
+            <div class="container">
+                <header class="header">
+                  <a src="http://127.0.0.1:8000">
+                    <img src="../photos/bw.png" alt="" class="headerLogo" />
+                  </a>
+                  <a >
+                    <p class="headertxt">тур</p>
+                  </a>
+                  <a >
+                    <p class="headertxt">музыка</p>
+                  </a>
+                  <a >
+                    <p class="headertxt">Корзина</p>
+                  </a>
+                </header>
+              </div>
+		{%block content%}
+
+		{%endblock%}
+
+
+</html>

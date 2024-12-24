@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		.cart-card-wrapper{
+		display: flex;
+		    flex-direction: column;
+    align-items: center;
+		}
+		.backgroundI {
+            background-image: url(../photos/backgroundMain.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+	</style>
+</head>
+
+<body>
+	{%extends 'base.html' %}
+{%block content%}
+<div class="backgroundI">
+<div class="cart-card-wrapper">
+	{%for product in order_items%}
+	<div class="cart-card">
+		<img src="{{product.prodcut.image.url}}" alt="" class="cart-img">
+		<div class="card-body">
+			<h3 class="cart-title">{{product.prodcut.title}}</h3>
+			<p class="cart-text">{{product.prodcut.price}}</p>
+			<p class="cart-text">{{product.quantity}}</p>
+		</div>
+	</div>
+	{%endfor%}
+</div>
+{%endblock%}
+</body>
+</html>
+
